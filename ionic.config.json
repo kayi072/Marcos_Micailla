@@ -1,0 +1,7 @@
+{
+  "name": "my-first-ass",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
