@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="authenticate()">
+    {{ authenticated ? 'Authenticated' : 'Authenticate' }}
+  </ion-button>
+
+  <ion-button (click)="showObjects()">
+    Show Objects
+  </ion-button>
+
+  <ion-button (click)="addObject()">
+    Add Object
+  </ion-button>
+
+  <ion-button (click)="unauthenticate()">
+    Unauthenticate
+  </ion-button>
+
+  <ion-loading *ngIf="loading"></ion-loading>
+
+  <ion-list *ngIf="showObjectArray">
+    <ion-item *ngFor="let obj of showObjectArray">
+      {{ obj }}
+    </ion-item>
+  </ion-list>
+</ion-content>
