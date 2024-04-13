@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title id="header">
+      LOG IN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">LOG IN PAGE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div id="container">
+      <form #accessForm="ngForm" (ngSubmit)="logIn()">
+        <label for="accessKey"><b>Access Key: </b></label>
+        <input type="text" id="accessKey" name="accessKey" class="user-white" [(ngModel)]="userName" placeholder="Enter Access Key" required><br><br>
+        <label for="accessCode"><b>Access Code: </b></label>
+        <input type="password" id="accessCode" name="accessCode" class="user-white" [(ngModel)]="password" placeholder="Enter Access Code" required><br><br>
+        <ion-button (click)="logIn()">LOG IN</ion-button>
+      </form>
+      <div *ngIf="accessForm.submitted && accessForm.invalid">
+        <p style="color: red;"> Please provide valid access credentials.</p>
+      </div>
+    </div>
+  </ion-content>
+</ion-content>
