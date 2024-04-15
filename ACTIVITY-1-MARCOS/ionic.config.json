@@ -1,0 +1,7 @@
+{
+  "name": "BSIT-KAME",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
