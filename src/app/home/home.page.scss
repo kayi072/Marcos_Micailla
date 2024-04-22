@@ -1,0 +1,80 @@
+ion-content {
+  --background:linear-gradient( to right, #000000, #8b0000);
+}
+
+.main_content_div {
+  width: 100%;
+
+.menu_btn {
+  position: relative;
+  top: 40px;
+  left: 10px;
+}
+
+.ion_label {
+  display: block;
+  color: #000000;
+  text-align: center;
+}
+
+.user_div {
+  padding: 20px;
+  width: 100%;
+  height: 260px;
+  background:linear-gradient( to right, #000000, #8b0000);
+  display: flex;
+  padding-top: 40px;
+  justify-content: space-between;
+
+  .first_div {
+      padding-top: 35px;
+      .welcome{
+          position: absolute;
+          left: 7rem;
+          top: 10rem;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 100px;
+          color: white;
+          font-weight: 500;
+      }
+      .myHobbies {
+        position: absolute;
+        left: 7rem;
+        top: 25rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 35px;
+        color: white;
+        font-weight: 250px;
+      }
+  }
+
+  .user_back {
+      height: 100px;
+      width: 80px;
+      border: 3px solid white;
+      background-position: top;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 7px;
+  }
+}
+
+.content_div {
+background: rgb(0, 0, 0);
+width: 3000px;
+border-top-right-radius: 75px;
+margin-top: 200px;
+padding-top: 30px;
+}
+
+.myName {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 30px;
+color: white;
+font-weight: 500;
+position: absolute;
+right: 7rem;
+top: 40rem;
+}
+
+}
