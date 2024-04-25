@@ -1,0 +1,16 @@
+APP_LINK
+
+https://fir-1-804d3.web.app/signin
+
+
+
+
+
+
+
+
+
+
+
+
+note: sir tatlong araw ko na po dinedebug yung host link ayaw umayos, kahit ibahin ko po yung firebase project. huhu :'< naka auth firebase po yan tas pwa flksjs sir please pikit ka muna tapos type mo po firebase serve sa terminal. hihi jok lang 
