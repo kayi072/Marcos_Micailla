@@ -1,8 +1,5 @@
 {
   "projects": {
-    "Home": "fir-1-804d3",
     "default": "fir-1-804d3"
-  },
-  "targets": {},
-  "etags": {}
+  }
 }
