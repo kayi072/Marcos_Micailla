@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AlertController, ToastController } from '@ionic/angular';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,19 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private authenticationService: AuthenticationService,
+    private router: Router,
+    private alertController: AlertController,
+    private toastController: ToastController
+  ) {}
+
+  ngOnInit() {
+  }
+
+  dashboard(): void {
+    this.authenticationService.canProceed = true;
+    this.router.navigate(['/dashboard']);
+  }
 
 }

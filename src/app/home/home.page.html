@@ -5,6 +5,7 @@
       <ion-menu-button color ="light"></ion-menu-button>
       </ion-buttons>
 
+      <div id = "header-container">
       <div class = "user_div">
         <div class = "first_div">
           <!-- Can be welcome text -->
@@ -14,11 +15,17 @@
         <div class = "user_back" [style.backgroundImage]="'url(src\images\pusa.png)'">
 
         </div>
+        </div>
       </div>
 
+      <div id = "content-container">
       <div class = "content_div">
         <div class = "myName">MARCOS, Micailla Marie D.C.</div>
       </div>
+    </div>
 
+      <div id = "dashboard-container">
+      <ion-button (click)="dashboard()" class="dashboard_btn">GO TO DASHBOARD</ion-button>
+    </div>
   </div>
 </ion-content>

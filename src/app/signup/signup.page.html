@@ -1,0 +1,15 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title>
+      Sign Up
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div id="container">
+  <input type="text" [(ngModel)]="email" placeholder="Email" class="box3"><br><br>
+  <input type="password" [(ngModel)]="password" placeholder="Password" class="box4"><br><br>
+  <input type="password" [(ngModel)]="retypePassword" placeholder="Re-type Password" class="box5"><br><br>
+  <ion-button class = "signUpbutton" (click)="signUp()">Sign Up</ion-button>
+</div>
+
