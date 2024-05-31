@@ -1,0 +1,62 @@
+ion-header {
+  ion-toolbar {
+    --background: #6a0000;
+    --color: #ffffff;
+    --ion-toolbar-background-color: #6a0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.input,
+.history {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.numbers {
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.clear, .equals {
+  background-color: #6a0000;
+  color: #ffffff;
+}
+
+.button, .operator {
+  background-color: #d3d3d3;
+  color: #000000;
+}
+
+.button:hover, .operator:hover {
+  background-color: #bfbfbf;
+}
+
+.clear:hover, .equals:hover {
+  background-color: #450000;
+}

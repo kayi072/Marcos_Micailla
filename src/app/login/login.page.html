@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title id="header">
+      LOG IN PAGE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">activity 6</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <input type="text" [(ngModel)]="userName" placeholder="Input username"><br><br>
+    <input type="password" [(ngModel)]="password" placeholder="Input password"><br><br>
+    <ion-button (click)="logIn()">LOG IN</ion-button>
+  </div>
+  </ion-content>
+  
