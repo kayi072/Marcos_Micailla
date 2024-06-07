@@ -25,11 +25,6 @@
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">Date Enrolled</ion-label>
-      <ion-input type="text" [(ngModel)]="users.dateEnrolled"></ion-input>
-    </ion-item>
-
-    <ion-item>
       <ion-label position="floating">GWA (General Weighted Average)</ion-label>
       <ion-input type="text" [(ngModel)]="users.gwa"></ion-input>
     </ion-item>
@@ -44,20 +39,4 @@
     <ion-button (click)="save()" class="add-button" expand="block">ADD</ion-button>
   </div>
 
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button color="light">
-      <ion-icon name="planet"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="logOut()">
-        <ion-icon name="log-out"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="rose"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button>
-        <ion-icon name="logo-octocat"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
 </ion-content>

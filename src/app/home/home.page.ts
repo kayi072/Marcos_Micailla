@@ -65,7 +65,7 @@ update(user: User) {
 }
 
 logOut() {
-  this.router.navigate(['login']);
+  this.router.navigate(['signin']);
   this.auth.setAuthentication(false);
 }
 }

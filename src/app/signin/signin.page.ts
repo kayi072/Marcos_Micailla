@@ -32,7 +32,7 @@ export class SigninPage implements OnInit {
       console.log(userCredential);
       const user = userCredential.user;
       this.authService.setAuthentication(true);
-      this.presentAlert('Success', 'Welcome to my portfolio '+user.email+'!');
+      this.presentAlert('Success', 'Welcome'+user.email+'!');
       this.router.navigate(['/home']);
     })  
     
@@ -95,7 +95,7 @@ export class SigninPage implements OnInit {
   
   logOut(): void {
     this.authService.canProceed = false;
-    this.router.navigate(['/login']);
+    this.router.navigate(['/signin']);
   }
 
   signUp(): void {
