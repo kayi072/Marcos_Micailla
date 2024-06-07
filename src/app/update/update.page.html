@@ -1,0 +1,71 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="update.page.scss">
+
+
+<ion-content>
+<div class="update-container">
+  <p>UPDATE YOUR RECORDS</p>    
+
+  <ion-item>
+    <ion-label position="floating" >First Name</ion-label>
+    <ion-input type="text" [(ngModel)]="users.firstname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating" >Last Name</ion-label>
+    <ion-input type="text" [(ngModel)]="users.lastname"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Course" placeholder="choose" [(ngModel)]="users.course">
+      <ion-select-option *ngFor="let course of course" [value]="course">{{ course }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Section" placeholder="select" [(ngModel)]="users.section">
+      <ion-select-option *ngFor="let section of section" [value]="section">{{ section }}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+  <ion-label position="floating" >Date Enrolled</ion-label>
+    <ion-input type="text" [(ngModel)]="users.dateEnrolled"></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label position="floating" >GWA (General Weighted Average) </ion-label>
+    <ion-input type="text" [(ngModel)]="users.gwa"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Graduated" interface="popover" placeholder="select" [(ngModel)]="users.isGraduated">
+      <ion-select-option value="true">True (Yes)</ion-select-option>
+      <ion-select-option value="false">False (No)</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-button (click)="update()"class = "update-button" expand = "block">UPDATE</ion-button>
+
+</div>
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab-button color = "light">
+    <ion-icon name="planet"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button (click)="logOut()">
+      <ion-icon name="log-out"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="rose"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="logo-octocat"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+
+
+
+</ion-content>

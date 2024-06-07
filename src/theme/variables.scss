@@ -1,2 +1,10 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+
+html {
+    --ion-dynamic-font: var(--ion-default-dynamic-font);
+  } 
+  
+  .md body {
+    --ion-background-color: #3e0000;
+    --ion-text-color: #ffffff;
+  }
+

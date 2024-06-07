@@ -1,0 +1,22 @@
+<ion-header class="ion-text-center">
+  <ion-toolbar>
+    <ion-title id="header">
+      SIGN IN
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <input type="text" [(ngModel)]="email" placeholder="Email" class="box"><br><br>
+    <input type="password" [(ngModel)]="password" placeholder="Password*" class="box2"><br><br>
+    <ion-button class="signInbtn" (click)="signIn()">SIGN IN</ion-button><br>
+    <ion-button class="signUpbtn" (click)="signUp()">SIGN UP</ion-button>
+  </div>
+  </ion-content>
