@@ -1,31 +1,26 @@
 <ion-content>
-  <div class = "main_content_div">
-
-    <ion-buttons slot= "start" class="menu_btn">
-      <ion-menu-button color ="light"></ion-menu-button>
-      </ion-buttons>
-
-      <div id = "header-container">
-      <div class = "user_div">
-        <div class = "first_div">
-          <!-- Can be welcome text -->
-          <ion-label class = "welcome">Welcome to <br>my Portfolio</ion-label>
-          <ion-label class = "myHobbies">Photography and Editing</ion-label>
-        </div>
-        <div class = "user_back" [style.backgroundImage]="'url(src\images\pusa.png)'">
-
-        </div>
-        </div>
-      </div>
-
-      <div id = "content-container">
-      <div class = "content_div">
-        <div class = "myName">MARCOS, Micailla Marie D.C.</div>
-      </div>
-    </div>
-
-      <div id = "dashboard-container">
-      <ion-button (click)="dashboard()" class="dashboard_btn">GO TO DASHBOARD</ion-button>
-    </div>
+  <ion-button class="logout" expand="block" (click)="logOut()">logout</ion-button>
+  
+  <div class="home-container" *ngFor="let user of userList">
+    <p>STUDENT RECORD</p>   
+    <p>
+      firstname: {{user.firstname}}<br>
+      lastname: {{user.lastname}}<br>
+      course: {{user.course}}<br>
+      section: {{user.section}}<br>
+      dateEnrolled: {{user.dateEnrolled}}<br>
+      gwa: {{user.gwa}}<br>
+      isGraduated: {{user.isGraduated}}<br>
+      <ion-button color="dark" fill="clear" style="float: right;" (click)="update(user)">
+        <ion-icon name="create"></ion-icon>
+      </ion-button>
+      <ion-button color="dark" fill="clear" style="float: right;" (click)="delete(user)">
+        <ion-icon name="trash"></ion-icon>
+      </ion-button>
+    </p> 
   </div>
+  
+  <br><br>
+  
+  <ion-button class="create" expand="block" href="/create">add data</ion-button>
 </ion-content>
